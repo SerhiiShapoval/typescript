@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive Website</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Interactive Website</h1>
+  </header>
+
+  <section class="main-content">
+    <button id="openModal">Open Modal</button>
+
+    <div class="card-container">
+      <div class="card" id="card1">
+        <h2>Card 1</h2>
+        <p>Some information about card 1.</p>
+      </div>
+      <div class="card" id="card2">
+        <h2>Card 2</h2>
+        <p>Some information about card 2.</p>
+      </div>
+      <div class="card" id="card3">
+        <h2>Card 3</h2>
+        <p>Some information about card 3.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Modal -->
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <span id="closeModal" class="close">&times;</span>
+      <h2>Modal Header</h2>
+      <p>This is a modal window</p>
+      <button id="loadData">Load Data</button>
+      <div id="dataContainer"></div>
+    </div>
+  </div>
+
+  <script src="index.js"></script>
+</body>
+</html>
